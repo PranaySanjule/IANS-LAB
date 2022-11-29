@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Add CSS at the head of HTML file -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="content" id="experiment-article-section-4-content">
+      <h4>ONE TIME PAD SIMULATOR</h4>
+      <div
+        style="
+          padding-left: 100px;
+          padding: 15px;
+          width: 400px;
+          border: 2rem;
+          background-color: whitesmoke;
+        "
+        class="container"
+      >
+        <p>
+          <b>Enter Plaintext(Bit Value) :</b>
+          <br />
+          <textarea
+            style="
+              margin-top: 8px;
+              border-width: 3px;
+              border-color: blue;
+              border-radius: 8px;
+            "
+            cols="50"
+            id="p"
+            name="p"
+            rows="2"
+          >
+10010010000110</textarea
+          >
+          <br />
+        </p>
+        <p>
+          <b>key =</b>
+          <input
+            style="
+              margin-top: 8px;
+              border-width: 3px;
+              border-color: blue;
+              border-radius: 8px;
+            "
+            id="key"
+            maxchars="25"
+            name="key"
+            size="47"
+            type="text"
+            value="0001100100010100"
+          />
+        </p>
+        <p>
+          <input
+            class="encryptbtn"
+            name="btnEn"
+            onclick="Vernam_Encrypt()"
+            type="button"
+            value="Encrypt"
+          />
+          <input
+            class="decryptbtn"
+            name="btnDe"
+            onclick="Vernam_Decrypt()"
+            type="button"
+            value="Decrypt"
+          />
+        </p>
+        <p>
+          <b>Encrypt Message :</b>
+          <br />
+          <textarea
+            style="
+              margin-top: 8px;
+              border-width: 3px;
+              border-color: blue;
+              border-radius: 8px;
+            "
+            cols="50"
+            id="c"
+            name="c"
+            rows="10"
+          ></textarea>
+          <br />
+        </p>
+        <br />
+      </div>
+    </div>
+
+    <!-- Add JS at the bottom of HTML file -->
+    <script src="js/vernam.js"></script>
+    <script src="../assets/js/iframeResize.js"></script>
+  </body>
+</html>

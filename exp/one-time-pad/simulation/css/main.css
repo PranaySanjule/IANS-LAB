@@ -1,0 +1,27 @@
+/* You CSS goes in here */
+.content {
+  margin-left: 400px;
+}
+h4 {
+  font-size: xx-large;
+}
+
+.encryptbtn,
+.decryptbtn {
+  margin-bottom: 40px;
+  font-weight: bolder;
+  width: 120px;
+  height: 35px;
+  color: white;
+  background-color: hotpink;
+  border-radius: 50px;
+  /* background-color: black; */
+}
+
+.encryptbtn:hover {
+  background-color: black;
+}
+
+.decryptbtn:hover {
+  background-color: lightgray;
+}
